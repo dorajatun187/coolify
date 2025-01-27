@@ -78,7 +78,7 @@
 }">
     <div class="flex pt-6 pb-4 pl-2">
         <div class="flex flex-col w-full">
-            <div class="text-2xl font-bold tracking-wide dark:text-white">Coolify</div>
+            <div class="text-2xl font-bold tracking-wide dark:text-white">TF Apps</div>
             <x-version />
         </div>
         <div class="pt-1">
@@ -362,7 +362,7 @@
                             </li>
                         @endpersist
                     @endif
-                    <li>
+                    <!-- <li>
                         <a title="Onboarding" wire:navigate
                             class="{{ request()->is('onboarding*') ? 'menu-item-active menu-item' : 'menu-item' }}"
                             href="{{ route('onboarding') }}">
@@ -372,8 +372,8 @@
                             </svg>
                             Onboarding
                         </a>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a title="Sponsor us" class="menu-item" href="https://coolify.io/sponsorships"
                             target="_blank">
                             <svg class="text-pink-500 icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -386,12 +386,12 @@
                             </svg>
                             Sponsor us
                         </a>
-                    </li>
+                    </li> -->
                 @endif
                 @if (!isSubscribed() && isCloud() && auth()->user()->teams()->get()->count() > 1)
                     <livewire:navbar-delete-team />
                 @endif
-                <li>
+                <!-- <li>
                     <x-modal-input title="How can we help?">
                         <x-slot:content>
                             <div title="Send us feedback or get help!" class="cursor-pointer menu-item"
@@ -405,7 +405,7 @@
                         </x-slot:content>
                         <livewire:help />
                     </x-modal-input>
-                </li>
+                </li> -->
                 <li>
                     <form action="/logout" method="POST">
                         @csrf
