@@ -5,7 +5,7 @@ set -e # Exit immediately if a command exits with a non-zero status
 ## $1 could be empty, so we need to disable this check
 #set -u # Treat unset variables as an error and exit
 set -o pipefail # Cause a pipeline to return the status of the last command that exited with a non-zero status
-CDN="https://github.com/dorajatun187/coolify/main"
+CDN="https://github.com/dorajatun187/coolify"
 DATE=$(date +"%Y%m%d-%H%M%S")
 
 VERSION="1.7"
